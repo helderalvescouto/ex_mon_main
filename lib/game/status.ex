@@ -1,3 +1,3 @@
-defmodule ExModule.Game.Staus do
+defmodule ExModule.Game.Status do
 
 end
