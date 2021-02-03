@@ -30,4 +30,8 @@ def print_round_message(%{status: :started} = info) do
     IO.puts("\n===== The Computer attacked the computer dealing #{damage} damage. =====\n")
   end
 
+  def print_move_message(player, :heal, life) do
+    IO.puts("\n===== The #{player} healled itself to #{life} life points. =====\n")
+  end
+
 end
