@@ -21,7 +21,6 @@ defmodule ExMon.Game.Actions.Attack do
   defp calculate_total_life(life, damage) when life - damage < 0, do: 0
   defp calculate_total_life(life, damage), do: life - damage
 
-
   defp update_opponent_life(life, opponent, damage) do
     opponent
     |> Game.fetch_player()
@@ -36,5 +35,4 @@ defmodule ExMon.Game.Actions.Attack do
 
     Status.print_move_message(opponent, :attack, damage)
   end
-
 end

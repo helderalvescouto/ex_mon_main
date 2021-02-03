@@ -1,4 +1,4 @@
-defmodule ExMox.Game.Actions.Heal do
+defmodule ExMon.Game.Actions.Heal do
   alias ExMon.Game
   alias ExMon.Game.Status
 
@@ -31,5 +31,4 @@ defmodule ExMox.Game.Actions.Heal do
 
     Status.print_move_message(player, :heal, life)
   end
-
 end
