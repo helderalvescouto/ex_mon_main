@@ -8,7 +8,7 @@ defmodule ExMon.GameTest do
       player = Player.build("Helder", :chute, :soco, :cura)
       computer = Player.build("Robotinik", :chute, :soco, :cura)
 
-      assert {:ok, _pid} = Game.start(computer, player)
+       assert {:ok, _pid} = Game.start(computer, player)
     end
   end
 
